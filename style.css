@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+*{
+    font-family: Cabin;
+    padding: 0%;
+    margin: 0%;
+}
+
+#amazonlogo{
+    float: left;
+}
+
+#address, #signin, #returns, #table, #primeday, #cart, #india{
+    display: inline-block;
+}
+
+#hellotext{
+    color: rgb(151, 151, 151);
+}
+
+table{
+    border: 0px;
+    border-color: white;
+    padding: 5px;
+    border-spacing: 0%;
+    border-collapse:collapse;
+}
+
+table tr{
+    display: flex;
+}
+
+#all{
+    color: black;
+    background-color: white;
+    position: relative;
+    top: 1px;
+    width: 700px;
+    padding: 3px;
+}
+
+header{
+    background-color: rgb(18,25,33);
+    color: white;
+    vertical-align: middle;
+    padding-bottom: 10px;
+    position: sticky;
+    font-size: small;
+    height: 40px;
+}
+
+.secondheader ul{
+    background-color: rgb(36,48,64);
+    color: white;
+    font-size: small;
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: -20px;
+    margin-bottom: -10px;
+    width: 1515px;
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+
+.background{
+    background-image: url("assets/background\ picture.png");
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#search{
+    background-color: rgb(251,190,103);
+    position: relative;
+    top: 1px;
+    padding: 3px;
+}
+
+#textbox{
+    background-color: white;
+    width: 100px;
+    position: relative;
+    top: 1px; 
+}
+
+.box{
+    display: inline-block;
+}
+
+#one, #two{
+    background-color: white;
+    margin-left: 50px;
+    padding: 13px;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: -40px;
+}
+
+#two{
+    margin-left: 20px;
+}
+
+.boxmargin{
+    margin-top: 9px;
+    margin-bottom: -5px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.boxmargin1{
+    margin-bottom: -5px;
+    margin-top: -9px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+#three, #four{
+    background-color: white;
+    margin-left: 20px;
+    padding: 13px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#three img{
+    text-align: center;
+}
+
+small{
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    font-weight: 100;
+}
+
+div#one > img, div#two > img{
+    height: 70px;
+}
+div#three > img{
+    height: 207px;
+    margin-left: 30px;
+}
+
+.bluetext{
+    font-weight: lighter;
+    color:rgb(108, 156, 165);
+    font-size: small;
+}
+
+button{
+    background-color: rgba(254,216,19,255);
+    padding: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 10px;
+    border-color:  rgba(254,216,19,255);
+    border-bottom: 10px;
+    border-right: 10px;
+    box-shadow: 0px 0px 0px rgba(254,216,19,255);
+}
+
+#lastimage{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 500px){
+    li, #table, #address, #indianflag, #returns, #india, #lastimage, #location{
+        display: none;
+    }
+    #one, #two, #three, #four{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .background{
+        margin-left: 0px;
+        margin-right: 0px;
+        /* background-repeat: no-repeat; */
+        background-size: 130% 100%;
+    }
+    #cart{
+        float: right;
+    }
+    header{
+        padding: 10px;
+        padding-bottom: 25px;
+    }
+    .secondheader ul{
+        width: 467px;
+        display: block;
+    }
+    #hamburger{
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+    }
+    ul li.lists.active{
+        display: block;
+        height: 20px;
+        padding: 1px;
+
+        #lion, #primeday, #arrow, #ok{
+            display: none;
+        }
+    }
+}
