@@ -16,19 +16,10 @@
 #hellotext{
     color: rgb(151, 151, 151);
 }
-
-table{
-    border: 0px;
-    border-color: white;
-    padding: 5px;
-    border-spacing: 0%;
-    border-collapse:collapse;
-}
-
-table tr{
+table {
     display: flex;
+    width: 60vh;
 }
-
 #all{
     color: black;
     background-color: white;
@@ -45,31 +36,32 @@ header{
     padding-bottom: 10px;
     position: sticky;
     font-size: small;
-    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.secondheader ul{
+.secondheader {
     background-color: rgb(36,48,64);
-    color: white;
-    font-size: small;
     display: flex;
-    justify-content:space-between;
-    list-style: none;
-    padding-top: 10px;
-    padding-bottom: -20px;
-    margin-bottom: -10px;
-    width: 1515px;
-    height: 40px;
-    padding-left: 8px;
-    padding-right: 8px;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 2vh;
+    align-items: center;
+    height: fit-content;
+}
+
+.secondheader img:nth-of-type(1) {
+    height: 2vh;
 }
 
 .background{
     background-image: url("assets/background\ picture.png");
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
+    background-repeat: no-repeat;
+    height: 90vh;
 }
 
 #search{
@@ -79,47 +71,19 @@ header{
     padding: 3px;
 }
 
-#textbox{
-    background-color: white;
-    width: 100px;
-    position: relative;
-    top: 1px; 
-}
-
 .box{
     display: inline-block;
 }
 
 #one, #two{
     background-color: white;
-    margin-left: 50px;
     padding: 13px;
     font-weight: bold;
     font-size: larger;
-    margin-top: -40px;
-}
-
-#two{
-    margin-left: 20px;
-}
-
-.boxmargin{
-    margin-top: 9px;
-    margin-bottom: -5px;
-    margin-right: 8px;
-    margin-left: 8px;
-}
-
-.boxmargin1{
-    margin-bottom: -5px;
-    margin-top: -9px;
-    margin-right: 8px;
-    margin-left: 8px;
 }
 
 #three, #four{
     background-color: white;
-    margin-left: 20px;
     padding: 13px;
     font-weight: bold;
     font-size: larger;
@@ -140,7 +104,6 @@ div#one > img, div#two > img{
 }
 div#three > img{
     height: 207px;
-    margin-left: 30px;
 }
 
 .bluetext{
@@ -161,49 +124,21 @@ button{
     box-shadow: 0px 0px 0px rgba(254,216,19,255);
 }
 
-#lastimage{
-    margin-top: 10px;
-    margin-left: 20px;
-}
 
-
-@media (max-width: 500px){
-    li, #table, #address, #indianflag, #returns, #india, #lastimage, #location{
+@media (max-width: 700px) {
+    .secondheader {
+        font-size: 1.4vh;
+    }
+    .secondheader div {
         display: none;
     }
-    #one, #two, #three, #four{
-        margin-top: 20px;
-        margin-left: 40px;
+    header {
+        font-size: 1.5vh;
     }
-    .background{
-        margin-left: 0px;
-        margin-right: 0px;
-        /* background-repeat: no-repeat; */
-        background-size: 130% 100%;
+    header img {
+        height: 1.5vh;
     }
-    #cart{
-        float: right;
-    }
-    header{
-        padding: 10px;
-        padding-bottom: 25px;
-    }
-    .secondheader ul{
-        width: 467px;
-        display: block;
-    }
-    #hamburger{
-        display: block;
-        padding: 10px;
-        cursor: pointer;
-    }
-    ul li.lists.active{
-        display: block;
-        height: 20px;
-        padding: 1px;
-
-        #lion, #primeday, #arrow, #ok{
-            display: none;
-        }
+    table {
+        width: 30vh;
     }
 }
